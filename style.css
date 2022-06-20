@@ -30,6 +30,15 @@ body {
   padding: 0px 15px;
   margin: 0 auto;
 }
+._container_full {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  ._container {
+    padding: 0px 45px;
+  }
+}
 
 .wrapper {
   background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png") 50% 0 no-repeat;
@@ -208,6 +217,11 @@ body {
   background-color: #1968fc;
   box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
 }
+@media (max-width: 1024px) {
+  .wokflow__title::after {
+    left: 0px;
+  }
+}
 .item-wokflow__body {
   display: flex;
   justify-content: space-between;
@@ -300,6 +314,11 @@ body {
   background-color: #1968fc;
   box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
 }
+@media (max-width: 1024px) {
+  .features__title::after {
+    left: 0px;
+  }
+}
 .item-features {
   display: flex;
   justify-content: space-between;
@@ -367,6 +386,11 @@ body {
   background-color: #1968fc;
   box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
 }
+@media (max-width: 1024px) {
+  .users__title::after {
+    left: 0px;
+  }
+}
 .users__body {
   display: flex;
   gap: 20px;
@@ -390,6 +414,122 @@ body {
   font-size: 16px;
   line-height: 156%;
   color: #11223f;
+}
+
+.purposes {
+  padding-top: 66px;
+  padding-bottom: 120px;
+}
+.purposes__title {
+  font-weight: 400;
+  color: #11223f;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  margin-bottom: 52px;
+  position: relative;
+}
+.purposes__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
+}
+@media (max-width: 1024px) {
+  .purposes__title::after {
+    left: 0px;
+  }
+}
+.purposes__body {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.purposes__item {
+  display: flex;
+  align-items: center;
+  min-width: 540px;
+  background-color: #fff;
+  gap: 20px;
+  box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1);
+}
+.purposes__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 177%;
+}
+
+.page__consultation {
+  background-color: #1968fc;
+}
+
+.consultation {
+  padding-top: 95px;
+  padding-bottom: 80px;
+  color: #fff;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .consultation {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.consultation__title {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.consultation__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
+}
+@media (max-width: 1024px) {
+  .consultation__title::after {
+    left: 0px;
+  }
+}
+.consultation__description {
+  font-size: 20px;
+  line-height: 200%;
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+.consultation__button {
+  background-color: #fff;
+  color: #1968fc;
+  width: 320px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.consultation img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+@media (max-width: 1024px) {
+  .consultation img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
