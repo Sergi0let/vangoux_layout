@@ -49,8 +49,19 @@ body {
 
   &__headline {
   }
+  // .page__wokflow
+
+  &__wokflow {
+  }
+  // .page__features
+
+  &__features {
+  }
 }
 
 @import 'header.scss';
 @import 'headline.scss';
 @import 'review.scss';
+@import 'wokflow.scss';
+@import 'features.scss';
+@import 'users.scss';

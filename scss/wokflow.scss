@@ -1,0 +1,123 @@
+.wokflow {
+  padding-top: 10px;
+  padding-bottom: 67.5px;
+  // .wokflow__title
+
+  &__title {
+    font-weight: 400;
+    color: $colorContent;
+    text-transform: uppercase;
+    line-height: 159%;
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: -40px;
+      width: 80px;
+      height: 2px;
+      background-color: $colorBlue;
+      box-shadow: 0px 2px 0px 0px rgba(209, 225, 254, 1);
+    }
+  }
+
+  // .wokflow__body
+
+  &__body {
+  }
+
+  // .wokflow__item
+
+  &__item {
+  }
+}
+
+.item-wokflow {
+  // .item-wokflow__body
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    height: 302px;
+  }
+
+  // .item-wokflow__step
+
+  &__step {
+    box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1);
+    max-width: 320px;
+    height: 220px;
+    padding: 40px;
+    position: relative;
+    z-index: 50;
+    &_middle {
+      margin-top: 40px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 69px;
+        left: -75px;
+        width: 70px;
+        height: 1px;
+        border-top: 1px dashed $colorBlue;
+      }
+    }
+    &_last {
+      margin-top: 80px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 69px;
+        left: -75px;
+        width: 70px;
+        height: 1px;
+        border-top: 1px dashed $colorBlue;
+      }
+    }
+  }
+
+  // .item-wokflow__title
+
+  &__title {
+    text-transform: uppercase;
+    line-height: 133%;
+    font-size: 12px;
+    font-weight: 700;
+    color: $colorContent;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__load {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  // .item-wokflow__subtitle
+
+  &__subtitle {
+    color: $colorBlue;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 177%;
+    font-weight: 700;
+  }
+
+  // .item-wokflow__text
+
+  &__text {
+    margin-top: 27px;
+    color: $colorContent;
+    line-height: 30px;
+  }
+
+  // .item-wokflow__decor
+
+  &__decor {
+    position: absolute;
+    bottom: -5.2px;
+    right: -5.2px;
+  }
+}

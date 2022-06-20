@@ -137,7 +137,8 @@ body {
   right: 0;
 }
 .reviews {
-  margin-top: 160px;
+  margin-top: 200px;
+  margin-bottom: 120px;
   display: flex;
 }
 .reviews__review {
@@ -157,7 +158,7 @@ body {
 .review__block {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
 .review__user {
   margin-right: 20px;
@@ -181,6 +182,213 @@ body {
 }
 .review__text {
   line-height: 149%;
+  color: #11223f;
+}
+
+.wokflow {
+  padding-top: 10px;
+  padding-bottom: 67.5px;
+}
+.wokflow__title {
+  font-weight: 400;
+  color: #11223f;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.wokflow__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
+}
+.item-wokflow__body {
+  display: flex;
+  justify-content: space-between;
+  height: 302px;
+}
+.item-wokflow__step {
+  box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1);
+  max-width: 320px;
+  height: 220px;
+  padding: 40px;
+  position: relative;
+  z-index: 50;
+}
+.item-wokflow__step_middle {
+  margin-top: 40px;
+}
+.item-wokflow__step_middle::before {
+  content: "";
+  position: absolute;
+  top: 69px;
+  left: -75px;
+  width: 70px;
+  height: 1px;
+  border-top: 1px dashed #1968fc;
+}
+.item-wokflow__step_last {
+  margin-top: 80px;
+}
+.item-wokflow__step_last::before {
+  content: "";
+  position: absolute;
+  top: 69px;
+  left: -75px;
+  width: 70px;
+  height: 1px;
+  border-top: 1px dashed #1968fc;
+}
+.item-wokflow__title {
+  text-transform: uppercase;
+  line-height: 133%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #11223f;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.item-wokflow__load {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.item-wokflow__subtitle {
+  color: #1968fc;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 177%;
+  font-weight: 700;
+}
+.item-wokflow__text {
+  margin-top: 27px;
+  color: #11223f;
+  line-height: 30px;
+}
+.item-wokflow__decor {
+  position: absolute;
+  bottom: -5.2px;
+  right: -5.2px;
+}
+
+.features {
+  padding-top: 67.5px;
+  padding-bottom: 67.5px;
+}
+.features__title {
+  font-weight: 400;
+  color: #11223f;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.features__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
+}
+.item-features {
+  display: flex;
+  justify-content: space-between;
+  height: 375px;
+}
+.item-features__step {
+  max-width: 325px;
+  position: relative;
+  height: 295px;
+}
+.item-features__step_two {
+  margin-top: 40px;
+}
+.item-features__step_three {
+  margin-top: 80px;
+}
+.item-features__general {
+  display: flex;
+  align-items: center;
+  background-color: #f3f7ff;
+}
+.item-features__general img {
+  width: 120px;
+  height: 120px;
+}
+.item-features__title {
+  margin-left: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #11223f;
+  font-size: 20px;
+}
+.item-features__text {
+  padding: 40px;
+  color: #11223f;
+  line-height: 149%;
+  background-color: #fff;
+}
+.item-features__decor {
+  position: absolute;
+  bottom: 17px;
+  right: -6px;
+}
+
+.users {
+  padding-top: 40px;
+  padding-bottom: 66px;
+}
+.users__title {
+  font-weight: 400;
+  color: #11223f;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.users__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1968fc;
+  box-shadow: 0px 2px 0px 0px rgb(209, 225, 254);
+}
+.users__body {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.users__item {
+  max-width: 360px;
+  padding: 20px;
+  background-color: #fff;
+}
+.users__label {
+  font-size: 20px;
+  color: #1968fc;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 200%;
+  margin-bottom: 30px;
+}
+.users__text {
+  font-size: 16px;
+  line-height: 156%;
   color: #11223f;
 }
 
