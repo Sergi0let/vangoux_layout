@@ -41,7 +41,6 @@ body {
   min-height: 110px;
   align-items: center;
 }
-
 .page-header__logo {
   display: flex;
 }
@@ -98,6 +97,91 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+}
+
+.headline {
+  margin-top: 120px;
+  color: #11223f;
+  position: relative;
+}
+.headline__content {
+  max-width: 600px;
+}
+.headline__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.headline__description {
+  font-size: 20px;
+  line-height: 159%;
+  margin-bottom: 40px;
+}
+.headline__upload-btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  background-color: #1968fc;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.headline__image {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.reviews {
+  margin-top: 160px;
+  display: flex;
+}
+.reviews__review {
+  display: flex;
+  gap: 40px;
+}
+.review__item {
+  max-width: 540px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 20px 60px 0px rgba(25, 104, 252, 0.1);
+}
+.review__person-info {
+  display: flex;
+  justify-content: space-between;
+}
+.review__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.review__user {
+  margin-right: 20px;
+}
+.review__names {
+  font-weight: 600;
+}
+.review__name {
+  font-size: 18px;
+  line-height: 133%;
+  color: #11223f;
+}
+.review__position {
+  font-size: 14px;
+  line-height: 171%;
+  color: #1968fc;
+}
+.review__quote {
+  width: 60px;
+  height: 46px;
+}
+.review__text {
+  line-height: 149%;
+  color: #11223f;
 }
 
 /*# sourceMappingURL=style.css.map */
