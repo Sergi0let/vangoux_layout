@@ -13,17 +13,20 @@
   // .page-header__list
 
   &__list {
-    display: flex;
-    li {
-      &:nth-child(1) {
-        margin-right: 49px;
-      }
+    display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+      li {
+        &:nth-child(1) {
+          margin-right: 49px;
+        }
 
-      &:nth-child(2) {
-        margin-right: 60px;
-      }
-      &:nth-child(3) {
-        margin-right: 61px;
+        &:nth-child(2) {
+          margin-right: 60px;
+        }
+        &:nth-child(3) {
+          margin-right: 61px;
+        }
       }
     }
   }
@@ -43,19 +46,23 @@
   // .page-header__upload-btn
 
   &__upload-btn {
-    box-shadow: 0px 10px 40px 0px rgba(25, 104, 252, 0.2);
-    text-transform: uppercase;
-    width: 180px;
-    line-height: 50px;
-    text-align: center;
-    background-color: $colorBlue;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    margin-left: 54px;
-    transition: all 0.3s ease 0s;
-    &:hover {
-      background: $colorBlueHover;
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      box-shadow: 0px 10px 40px 0px rgba(25, 104, 252, 0.2);
+      text-transform: uppercase;
+      width: 180px;
+      line-height: 50px;
+      text-align: center;
+      background-color: $colorBlue;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 54px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background: $colorBlueHover;
+      }
     }
   }
 }

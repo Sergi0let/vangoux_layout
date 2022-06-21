@@ -1,0 +1,33 @@
+.page {
+  // .page__mobile
+
+  &__mobile {
+  }
+}
+.mobile {
+  height: 180px;
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png')
+    center/cover no-repeat;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  &__body {
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .mobile__title
+
+  &__title {
+    max-width: 520px;
+    text-align: center;
+    color: #fff;
+    line-height: 159%;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

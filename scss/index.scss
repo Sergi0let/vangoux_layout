@@ -35,14 +35,27 @@ body {
     margin: 0 auto;
   }
   @media (max-width: 1024px) {
-    padding: 0px 45px;
+    padding: 0px 60px;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 15px;
   }
 }
 //------------------------------
 .wrapper {
-  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png')
-    50% 0 no-repeat;
-  min-height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 104, 252, 0.0001) 0%,
+    rgba(25, 104, 252, 0.05) 23.07%,
+    rgba(25, 104, 252, 0.0001) 99.94%,
+    rgba(25, 104, 252, 0.05) 100%
+  );
+
+  @media (min-width: 1024px) {
+    background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png')
+      50% 0 no-repeat;
+    min-height: 100%;
+  }
 }
 .page {
   // .page__header
@@ -73,6 +86,18 @@ body {
   &__consultation {
     background-color: $colorBlue;
   }
+  // .page__stories
+
+  &__stories {
+    margin-bottom: 92px;
+    @media (min-width: 1024px) {
+      margin-bottom: 120px;
+    }
+  }
+  // .page__footer
+
+  &__footer {
+  }
 }
 
 @import 'header.scss';
@@ -83,3 +108,6 @@ body {
 @import 'users.scss';
 @import 'purpose.scss';
 @import 'consultation.scss';
+@import 'stories.scss';
+@import 'footer.scss';
+@import 'mobile.scss';
