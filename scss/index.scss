@@ -68,6 +68,11 @@ body {
 
   &__purposes {
   }
+  // .page__consultation
+
+  &__consultation {
+    background-color: $colorBlue;
+  }
 }
 
 @import 'header.scss';
