@@ -95,6 +95,9 @@ body {
     margin-bottom: 120px;
   }
 }
+.page-header {
+  display: flex;
+}
 .page-header__logo {
   display: flex;
 }
@@ -154,9 +157,9 @@ body {
 }
 
 .logo {
+  width: 180px;
   align-items: center;
-  flex: 1 1 auto;
-  margin-right: 10px;
+  margin-right: 200px;
 }
 .logo__image {
   flex: 0 0 50px;
