@@ -14,7 +14,7 @@
 
   &__list {
     display: none;
-    @media (min-width: 1024px) {
+    @media (min-width: 900px) {
       display: flex;
       li {
         &:nth-child(1) {
@@ -47,7 +47,7 @@
 
   &__upload-btn {
     display: none;
-    @media (min-width: 1024px) {
+    @media (min-width: 900px) {
       display: block;
       box-shadow: 0px 10px 40px 0px rgba(25, 104, 252, 0.2);
       text-transform: uppercase;
