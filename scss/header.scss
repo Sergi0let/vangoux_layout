@@ -17,15 +17,19 @@
     @media (min-width: 900px) {
       display: flex;
       li {
+        text-align: center;
         &:nth-child(1) {
-          margin-right: 49px;
+          width: 120px;
         }
 
         &:nth-child(2) {
-          margin-right: 60px;
+          width: 120px;
         }
         &:nth-child(3) {
-          margin-right: 61px;
+          width: 120px;
+        }
+        &:nth-child(4) {
+          width: 180px;
         }
       }
     }
@@ -38,6 +42,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+
     &:hover {
       text-decoration: underline;
     }
@@ -58,7 +63,7 @@
       color: #fff;
       font-size: 14px;
       font-weight: 700;
-      margin-left: 54px;
+      margin-left: 20px;
       transition: all 0.3s ease 0s;
       &:hover {
         background: $colorBlueHover;
